@@ -1,0 +1,74 @@
+#all-button{
+    background-color: #ff6666;
+    border: 1px solid #ff6666;    
+}
+
+#all-button:hover, #all-button:focus, #all-button:active, #all-button.active, 
+#all-button:active:focus{
+    border: 1px solid transparent !important;
+    outline: none !important;
+    box-shadow: none;
+}
+#qual-button{
+    background-color:#ff6600;
+    border: 1px solid #ff6600;
+}
+#qual-button:hover, #qual-button:focus, #qual-button:active, #qual-button.active, 
+#qual-button:active:focus{
+    border: 1px solid transparent !important;
+    outline: none !important;
+    box-shadow: none;
+}
+#name-button{
+    background-color: #ffdd99;
+    border: 1px solid #ffdd99;
+}
+
+#name-button:hover, #name-button:focus, #name-button:active, #name-button.active, 
+#name-button:active:focus{
+    border: 1px solid transparent !important;
+    outline: none !important;
+    box-shadow: none;
+}
+
+#prod-button{
+    background-color:   #ff9900;
+    border: 1px solid   #ff9900;  
+}
+#prod-button:hover, #prod-button:focus, #prod-button:active, #prod-button.active, 
+#prod-button:active:focus{
+    border: 1px solid transparent !important;
+    outline: none !important;
+    box-shadow: none;
+}
+
+#bck-button{    
+    background-color:   #ff4d4d;
+    border: 1px solid    #ff4d4d;   
+}
+
+#bck-button:hover, #bck-button:focus, #bck-button:active, #bck-button.active, 
+#bck-button:active:focus{
+    border: 1px solid transparent !important;
+    outline: none !important;
+    box-shadow: none;
+}
+
+#envolvente-menu{
+    background-color: white;
+    height: 500px;
+    width: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -500px;
+}
+
+#buttons-stack{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,67 @@
+.fade-appear{
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear.fade-appear-active{
+    opacity:1;
+    transition: opacity 500ms linear;
+}
+
+.fade-enter{
+    opacity: 0;
+    z-index: 1;
+}
+.fade-enter.fade-enter-active{
+    opacity:1;
+    transition: opacity 500ms linear;
+}
+
+.text-to-render{
+   font-family: 'Open Sans';
+   font-size: 75px;  
+}
+
+#wilkommen{
+    background-color: transparent;
+    font-family: 'Open Sans';
+    height: 50px;   
+}
+
+.transition-text{
+    margin-top: 1%;
+    color: gold;
+    background-color: transparent;
+}
+
+.envolvente{
+    background-color: transparent;
+    height: 500px;
+    width: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -500px;
+}
+
+#show-me-the-button{
+    height: 50px;  
+}
+
+#redirect-not-aut{
+    margin-top: 1%;
+    background-color: transparent;
+    height: 100px; 
+}
+
+.enter{ /** botao mesmo, nao div*/
+    background-color: tomato; 
+    color: white;
+    height: 50px;
+}
+#text-redir{
+    background-color: transparent;
+    height: 50px;
+    line-height: 50px;
+}

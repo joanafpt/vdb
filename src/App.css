@@ -1,0 +1,47 @@
+.App {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#welcome{
+    background-color: #FFFFFF; 
+    text-align: center;
+    padding-bottom: 40px; 
+    margin: auto; 
+    width: 100%;
+    text-align: justify;
+  
+
+}
+* {
+    box-sizing: border-box;
+  }
+  
+.App-link {
+    color: #61dafb;
+}
+
+.square {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 30%;
+    margin: 1.66%;
+    background-color: #ffffff;
+    color: #1E1E1E;
+    text-align: justify;
+    overflow-y: scroll;
+    height: 350px;
+    border: 1px solid #1E1E1E;
+}
+
+
+::-webkit-scrollbar {
+    background-color: lightgrey;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2eb8b8;
+}
+
