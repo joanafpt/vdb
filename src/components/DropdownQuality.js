@@ -25,14 +25,14 @@ function DropdownName({ title, items = false }) {
 
 
     const callbackQualities = (data) => {
-        console.log(data, ' data no callback');
+       // console.log(data, ' data no callback');
         setQualities(data);
         setRecebi(true);
     }
 
     const handleOnClick = (item) => {
         setSelection([item]);
-        console.log(item['Qualidade'], ' item');
+       // console.log(item['Qualidade'], ' item');
         setOpen(false);
         setRenderMsg(
             `A Qualidade selecionada é: ${item['Qualidade']}. Para mais informações, clique em Enviar`);
@@ -41,13 +41,13 @@ function DropdownName({ title, items = false }) {
     const alguemClicouNoBotao = () => {
         var qualityToSend;
         if (selection.length === 0) {
-            console.log('Não selecionou nada ainda');
+           // console.log('Não selecionou nada ainda');
             setRenderMsg('Por favor selecione uma Qualidade na lista.')
             setInitialNotSend('');
             return;
         }
         qualityToSend = selection[0]['Qualidade'];
-        console.log(qualityToSend, ' qts aqui')
+       // console.log(qualityToSend, ' qts aqui')
         functions.searchByQualityWithDropdown(qualityToSend, callback);
         setCarregaram(true);
         setRenderMsg('Os dados referentes à sua seleção são os seguintes:');
