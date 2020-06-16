@@ -8,7 +8,7 @@ const giveMeTheProducers = (callbackProducers) => {
     axiosRetry(axios, { retries: 10});
     axios.get(producers)
     .then(response => {
-        console.log(response.data, ' produtores aqui');
+        //console.log(response.data, ' produtores aqui');
         if (callbackProducers) {
             callbackProducers(response.data);
         }
@@ -17,7 +17,7 @@ const giveMeTheProducers = (callbackProducers) => {
         console.log('o erro ao obter os produtores é: ', error);  
         axios.get(producers)
         .then(response => {
-            console.log(response.data);
+            //console.log(response.data);
             if (callbackProducers) {
                 callbackProducers(response.data);
             }
@@ -55,7 +55,7 @@ const giveMeTheNames = (callbackNames) => {
     axiosRetry(axios, { retries: 10});
     axios.get(names)
     .then(response => {
-        console.log(response.data, ' nomes aqui');
+        //console.log(response.data, ' nomes aqui');
         if(callbackNames){
             callbackNames(response.data);
         }
@@ -64,7 +64,7 @@ const giveMeTheNames = (callbackNames) => {
         console.log('o erro ao obter os nomes é: ', error);  
         axios.get(names)
         .then(response => {
-            console.log(response.data, ' qualidades aqui');
+           // console.log(response.data, ' qualidades aqui');
             if(callbackNames){
                 callbackNames(response.data);
             }
@@ -84,10 +84,10 @@ const completeList = (callback) => {
             }
         })
         .catch(error => {
-            console.log('o erro ao obter a lista COMPLETA é: ', error);     
+           // console.log('o erro ao obter a lista COMPLETA é: ', error);     
             axios.get(apiRoot + '/get-full-list?fulllist=Enviar')
             .then(response => {
-                console.log(response.data, ' qualidades aqui');
+               // console.log(response.data, ' qualidades aqui');
                 if(callback){
                     callback(response.data);
                 }
@@ -107,7 +107,7 @@ const searchByProducerWithDropdown = (producer, callback) => {
                 }
             })
             .catch(error => {
-                console.log('o erro ao obter a lista por PRODUTORES é: ', error);   
+              //  console.log('o erro ao obter a lista por PRODUTORES é: ', error);   
                 axios.get(url)
                 .then(response => {          
                     if (callback) {
@@ -126,7 +126,7 @@ const searchByNameWithDropdown = (name, callback) => {
     axiosRetry(axios, { retries: 6 });
     axios.get(url)
         .then(response => {
-            console.log(response.data);
+           // console.log(response.data);
             if (callback) {
                 callback(response.data);
             }
@@ -136,7 +136,7 @@ const searchByNameWithDropdown = (name, callback) => {
             //repeats call
             axios.get(url)
             .then(response => {
-                console.log(response.data);
+               // console.log(response.data);
                 if (callback) {
                     callback(response.data);
                 }
@@ -155,7 +155,7 @@ const searchByQualityWithDropdown = (quality, callback) => {
     axiosRetry(axios, { retries: 6 });
     axios.get(url)
         .then(response => {
-            console.log(response.data);
+           // console.log(response.data);
             if (callback) {
                 callback(response.data);
             }
