@@ -48,7 +48,7 @@ function Dropdown({ title, items = false }) {
     }
 
     const callback = (data) => {
-        console.log(data);
+        //console.log(data);
         setRenderApiResults([...data]);
     }
 
