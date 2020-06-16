@@ -28,7 +28,7 @@ function DropdownName({ title, items = false }) {
 
     const handleOnClick = (item) => { // n vamos incluir multiselection
         setSelection([item]);
-        console.log(item['Vinho ou Marca'], ' item');
+        //console.log(item['Vinho ou Marca'], ' item');
         setOpen(false);
         setRenderMsg(
             `O Vinho selecionado é: ${item['Vinho ou Marca']}. Para mais informações, clique em Enviar`)
